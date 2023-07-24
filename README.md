@@ -1,1 +1,1 @@
-git@github.com:yamanaide/ono-tebe-nado
+https://github.com/yamanaide/ono-tebe-nado
