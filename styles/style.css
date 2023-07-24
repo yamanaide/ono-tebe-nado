@@ -49,7 +49,7 @@ li span {
 }
 
 .header__logo {
-width: 136px; 
+  width: 136px; 
 }
 
 .header-contacts-list {
@@ -257,7 +257,7 @@ span span {
   padding: 63px 0;
 }
 
-.about__column{
+.about__column {
   display: flex;
   flex-direction: column;
 }
