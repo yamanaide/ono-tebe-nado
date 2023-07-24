@@ -1,1 +1,1 @@
-# ono-tebe-nado
+git@github.com:yamanaide/ono-tebe-nado
