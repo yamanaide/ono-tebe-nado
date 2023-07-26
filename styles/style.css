@@ -9,12 +9,12 @@
   flex-shrink: 0;
   justify-content: space-between;
   align-items: center;
-  padding: 92px 51px;
+  padding: 92px 50px;
 }
 
 .header__menu {
   color: #000;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -39,7 +39,7 @@
   text-decoration: none;
 }
 
-li span {
+.change-position {
   position: relative;
   left: -4px;
 }
@@ -53,9 +53,9 @@ li span {
 }
 
 .header-contacts-list {
-  padding: 0 35px 0 153px;
+  padding: 0 3px 0 153px;
   color: #000;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -67,25 +67,32 @@ li span {
 .cover {
   display: flex;
   flex-shrink: 0;
-  min-width: 1440px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.position {
+  position: relative;
+  width: 100%;
 }
 
 .overlay {
+  position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover__title {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 11px;
   padding: 165px 50px 125px;
   color: #fff;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 700;
   font-size: 100px;
   font-style: normal;
@@ -98,7 +105,7 @@ li span {
   line-height: 115%;
 }
 
-span span {
+.margin-left {
   margin-left: -25px;
 }
 
@@ -113,17 +120,19 @@ span span {
 }
 
 .cover__description {
+  position: relative;
   display: flex;
   flex-shrink: 0;
+  justify-content: flex-end;
   align-items: center;
   margin: 0 0 52px 0;
 }
 
 .cover__description-text {
   flex-shrink: 0;
-  padding: 3px 77.5px 0 422px;
+  padding-right: 78px;
   color: #fff;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
@@ -139,16 +148,18 @@ span span {
 .bet-button {
   display: flex;
   flex-shrink: 0;
+  margin-right: 50px;
   border: 1px solid #fff;
   padding: 12.5px 32.5px;
   color: #fff;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
   font-size: 22px;
   font-style: normal;
   line-height: normal;
   text-transform: uppercase;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .lots {
@@ -159,7 +170,7 @@ span span {
 .lots__heading {
   padding: 180px 0 26px 90px;
   color: #000;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 700;
   font-size: 40px;
   font-style: normal;
@@ -170,18 +181,26 @@ span span {
 .lots__card-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
 }
 
+.size {
+  width: 430px;
+  min-height: 450px;
+}
+
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   justify-content: space-between;
   width: 430px;
-  height: 450px;
+  min-height: 450px;
   padding: 50px 40px;
+  
 }
 
 .card_type_film {
@@ -201,7 +220,7 @@ span span {
 
 .card__title {
   color: #FFF;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 700;
   font-size: 22px;
   font-style: normal;
@@ -213,7 +232,7 @@ span span {
 
 .card__text {
   color: #FFF;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
@@ -221,9 +240,9 @@ span span {
 }
 
 .lots__look-more-link {
-  padding: 29px 0 1.8px 90px;
+  margin: 29px 0 1.8px 90px;
   color: #000;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
@@ -260,12 +279,13 @@ span span {
 .about__column {
   display: flex;
   flex-direction: column;
+  
 }
 
 .about__title {
   padding: 101px 0 100px 25px;
   color: #000;
-  font-family: Raleway,sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 700;
   font-size: 40px;
   font-style: normal;
@@ -282,7 +302,7 @@ span span {
 
 .about__text-properties {
   color: #000;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
@@ -306,7 +326,7 @@ span span {
 .footer-contacts-list {
   padding-right: 9px;
   color: #000;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -317,10 +337,9 @@ span span {
 
 .footer__menu {
   margin-top: -2px;
-  margin-left: 34px;
   padding-right: 5px;
   color: #000;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -341,8 +360,7 @@ span span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 240px;
-  height: 48px;
+  gap: 48px;
   margin-top: -2px;
 }
 
