@@ -1,8 +1,3 @@
-.centering {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 .header {
   display: flex;
   flex-direction: row;
@@ -66,6 +61,7 @@
 
 .cover {
   display: flex;
+  flex-direction: column;
   flex-shrink: 0;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
@@ -80,6 +76,7 @@
 
 .overlay {
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -184,23 +181,26 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
+  margin: 0 50px;
 }
 
 .size {
+  flex-grow: 1;
   width: 430px;
   min-height: 450px;
 }
 
+.underline {
+  text-decoration: none;
+}
+
 .card {
-  position: relative;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   justify-content: space-between;
-  width: 430px;
   min-height: 450px;
   padding: 50px 40px;
-  
 }
 
 .card_type_film {
@@ -219,6 +219,7 @@
 }
 
 .card__title {
+  position: relative;
   color: #FFF;
   font-family: Raleway, Arial, sans-serif;
   font-weight: 700;
@@ -227,16 +228,17 @@
   line-height: 120%;
   text-decoration-line: underline;
   text-transform: uppercase;
-  
 }
 
 .card__text {
+  position: relative;
   color: #FFF;
   font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
   line-height: 120%;
+  text-decoration-line: none;
 }
 
 .lots__look-more-link {
@@ -272,8 +274,7 @@
 
 .about__logo-image {
   width: 148px;
-  margin: 0 auto;
-  padding: 63px 0;
+  margin: 63px 0 0 46px;
 }
 
 .about__column {
